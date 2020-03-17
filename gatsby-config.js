@@ -54,6 +54,16 @@ module.exports = {
         // options page using the provided `acf_add_options_page` method, in your WordPress setup
         // Dashes in IDs will be converted to underscores for use in GraphQL
       },
+      includedRoutes: [
+        "**/categories",
+        "**/posts",
+        "**/pages",
+        "**/media",
+        "**/tags",
+        "**/taxonomies",
+        "**/users",
+        "**/*/*menus"
+      ]
     },
   ],
 }
