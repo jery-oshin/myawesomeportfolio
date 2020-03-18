@@ -5,22 +5,23 @@ import {graphql, useStaticQuery, Link} from 'gatsby';
 const PortfolioItem = () => {
 
     const data = useStaticQuery(graphql`
-        query {
-                allWordpressWpPortfolio {
-                    edges{
-                        node{
-                            id 
-                            slug
-                            title
-                            excerpt
-                            content
-                            featured_media{
-                                source_url
-                            }
+        query 
+        {
+            allWordpressWpPortfolio {
+                edges{
+                    node{
+                        id 
+                        slug
+                        title
+                        excerpt
+                        content
+                        featured_media{
+                            source_url
                         }
                     }
                 }
             }
+        }
     
     `)
 
