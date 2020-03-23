@@ -55,7 +55,9 @@ const MainMenu = () => {
                     query.allWordpressWpApiMenusMenusItems.edges.map( edge => (
                         edge.node.items.map( item => (
                             <div key={item.title}>
-                                <MenuItem to={item.object_slug}>{item.title}</MenuItem>
+                                <MenuItem to={`/${item.object_slug}`} key={item.title}>
+                                    {item.title}
+                                </MenuItem>
                             </div>
                         ))
                     ))

@@ -83,7 +83,10 @@ exports.createPages = ({ graphql, actions }) => {
                         excerpt
                         content
                         featured_media{
-                            source_url
+                          source_url
+                        }
+                        acf {
+                          portfolio_url
                         }
                     }
                 }

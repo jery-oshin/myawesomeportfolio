@@ -5,6 +5,7 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -34,7 +35,7 @@ module.exports = {
          * The base URL of the WordPress site without the trailingslash and the protocol. This is required.
          * Example : 'demo.wp-api.org' or 'www.example-site.com'
          */
-        baseUrl: "220241bb.ngrok.io",
+        baseUrl: "b7c0d6fd.ngrok.io",
         // The protocol. This can be http or https.
         protocol: "https",
         // The rest api route prefix that your WordPress site is using.

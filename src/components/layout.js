@@ -2,9 +2,10 @@ import React from "react"
 import MainMenu from './MainMenu'
 import styled, {createGlobalStyle} from 'styled-components'
 
-const GlobalStyles = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+
+const GlobalStyles = createGlobalStyle`
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap');
   body, html {
     font-family: 'Open Sans', sans-serif;
     margin: 0 !important;
