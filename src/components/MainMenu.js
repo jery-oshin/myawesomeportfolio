@@ -53,13 +53,16 @@ const MainMenu = () => {
             <SiteInfo />
                 {
                     query.allWordpressWpApiMenusMenusItems.edges.map( edge => (
-                        edge.node.items.map( item => (
+                        edge.node.items.map( item => {
+                            console.log(`/${item.object_slug}`);
+                            return(
                             <div key={item.title}>
                                 <MenuItem to={`/${item.object_slug}`} key={item.title}>
                                     {item.title}
                                 </MenuItem>
                             </div>
-                        ))
+                            )
+                        })
                     ))
                 }
             </MainMenuInner>
